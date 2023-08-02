@@ -73,9 +73,6 @@ export const StyledSummary = styled.div`
 export const MainStates = styled.div`
   flex: 2;
   width: 100%;
-
-  @media (max-width: 660px) {
-  }
 `;
 
 export const Title = styled.div`
@@ -158,6 +155,28 @@ export const StyledDashboard = styled.div`
   height: 100vh;
 `;
 
+export const MobileNav = styled.div`
+  display: none;
+
+  @media (max-width: 660px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+  }
+`;
+
+export const Span = styled.div`
+  display: flex;
+  gap: 5px;
+  font-size: 0.8rem;
+
+  a {
+    text-decoration: none;
+  }
+`;
+
 export const SideNav = styled.div`
   min-height: 100vh;
   background: #f4f4f4;
@@ -201,7 +220,7 @@ export const Content = styled.div`
 
   @media (max-width: 660px) {
     margin-left: 0;
-    padding: 15px;
+    padding: 0 15px;
   }
 `;
 

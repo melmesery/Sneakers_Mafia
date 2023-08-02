@@ -109,6 +109,60 @@ const Summary = () => {
   ];
   return (
     <StyledSummary>
+      {/* <MobileNav>
+        <Span>
+          <span>
+            <FaTachometerAlt />
+          </span>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "link-active" : "link-inactive"
+            }
+            to="/admin/summary"
+          >
+            Summary
+          </NavLink>
+        </Span>
+        <Span>
+          <span>
+            <FaStore />
+          </span>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "link-active" : "link-inactive"
+            }
+            to="/admin/products"
+          >
+            Products
+          </NavLink>
+        </Span>
+        <Span>
+          <span>
+            <FaClipboard />
+          </span>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "link-active" : "link-inactive"
+            }
+            to="/admin/orders"
+          >
+            Orders
+          </NavLink>
+        </Span>
+        <Span>
+          <span>
+            <FaUsers />
+          </span>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "link-active" : "link-inactive"
+            }
+            to="/admin/users"
+          >
+            Users
+          </NavLink>
+        </Span>
+      </MobileNav> */}
       <MainStates>
         <Overview>
           <Title>

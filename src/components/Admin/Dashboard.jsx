@@ -1,15 +1,20 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { FaClipboard, FaStore, FaTachometerAlt, FaUsers } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
-import { Content, Div, SideNav, StyledDashboard } from "./StyledAdmin.js";
+import {
+  Content,
+  Div,
+  MobileNav,
+  SideNav,
+  Span,
+  StyledDashboard,
+} from "./StyledAdmin.js";
 
 const Dashboard = () => {
   return (
-    <StyledDashboard>
-      <SideNav>
-        <h2>Dashboard</h2>
-
-        <Div>
+    <Fragment>
+      <MobileNav>
+        <Span>
           <span>
             <FaTachometerAlt />
           </span>
@@ -21,9 +26,8 @@ const Dashboard = () => {
           >
             Summary
           </NavLink>
-        </Div>
-
-        <Div>
+        </Span>
+        <Span>
           <span>
             <FaStore />
           </span>
@@ -35,9 +39,8 @@ const Dashboard = () => {
           >
             Products
           </NavLink>
-        </Div>
-
-        <Div>
+        </Span>
+        <Span>
           <span>
             <FaClipboard />
           </span>
@@ -49,9 +52,8 @@ const Dashboard = () => {
           >
             Orders
           </NavLink>
-        </Div>
-
-        <Div>
+        </Span>
+        <Span>
           <span>
             <FaUsers />
           </span>
@@ -63,12 +65,73 @@ const Dashboard = () => {
           >
             Users
           </NavLink>
-        </Div>
-      </SideNav>
-      <Content>
-        <Outlet />
-      </Content>
-    </StyledDashboard>
+        </Span>
+      </MobileNav>
+      <StyledDashboard>
+        <SideNav>
+          <h2>Dashboard</h2>
+
+          <Div>
+            <span>
+              <FaTachometerAlt />
+            </span>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link-active" : "link-inactive"
+              }
+              to="/admin/summary"
+            >
+              Summary
+            </NavLink>
+          </Div>
+
+          <Div>
+            <span>
+              <FaStore />
+            </span>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link-active" : "link-inactive"
+              }
+              to="/admin/products"
+            >
+              Products
+            </NavLink>
+          </Div>
+
+          <Div>
+            <span>
+              <FaClipboard />
+            </span>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link-active" : "link-inactive"
+              }
+              to="/admin/orders"
+            >
+              Orders
+            </NavLink>
+          </Div>
+
+          <Div>
+            <span>
+              <FaUsers />
+            </span>
+            <NavLink
+              className={({ isActive }) =>
+                isActive ? "link-active" : "link-inactive"
+              }
+              to="/admin/users"
+            >
+              Users
+            </NavLink>
+          </Div>
+        </SideNav>
+        <Content>
+          <Outlet />
+        </Content>
+      </StyledDashboard>
+    </Fragment>
   );
 };
 
