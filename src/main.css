@@ -1,0 +1,34 @@
+.custom-swal {
+  z-index: 9999;
+}
+
+#swiper-container .swiper-button-prev,
+#swiper-container .swiper-button-next {
+  display: none;
+}
+
+#swiper-slide {
+  margin: 20px;
+
+  @media (max-width: 665px) {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+}
+
+.page-item {
+  background: red;
+}
+
+@media (max-width: 665px) {
+  .dialog {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dialog-content {
+    margin: 0;
+    padding: 0;
+  }
+}
