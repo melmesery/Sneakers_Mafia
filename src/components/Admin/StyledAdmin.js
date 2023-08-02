@@ -81,7 +81,7 @@ export const Title = styled.div`
     color: rgba(234, 234, 234, 0.68);
   }
 
-  @media (max-width: 660px) {
+  /* @media (max-width: 660px) {
     h3 {
       font-size: 0.8rem;
     }
@@ -89,7 +89,7 @@ export const Title = styled.div`
     p {
       font-size: 0.7rem;
     }
-  }
+  } */
 `;
 
 export const Overview = styled.div`
@@ -249,9 +249,9 @@ export const Main = styled.div`
   @media (max-width: 660px) {
     margin-top: 20px;
 
-    h3 {
+    /* h3 {
       font-size: 0.8rem;
-    }
+    } */
   }
 `;
 
@@ -270,18 +270,18 @@ export const Info = styled.div`
 export const Key = styled.div`
   flex: 1;
 
-  @media (max-width: 660px) {
+  /* @media (max-width: 660px) {
     font-size: 0.6rem;
-  }
+  } */
 `;
 
 export const Data = styled.div`
   flex: 1;
   font-weight: 700;
 
-  @media (max-width: 660px) {
+  /* @media (max-width: 660px) {
     font-size: 0.6rem;
-  }
+  } */
 `;
 
 // Charts
@@ -313,9 +313,9 @@ export const StyledTransactions = styled.div`
   @media (max-width: 660px) {
     margin-top: 20px;
 
-    h3 {
+    /* h3 {
       font-size: 0.8rem;
-    }
+    } */
   }
 `;
 
@@ -336,11 +336,11 @@ export const Transaction = styled.div`
     background: rgba(102, 108, 255, 0.12);
   }
 
-  @media (max-width: 660px) {
+  /* @media (max-width: 660px) {
     p {
       font-size: 0.6rem;
     }
-  }
+  } */
 `;
 
 // Widget
@@ -375,14 +375,14 @@ export const Text = styled.div`
     color: rgba(234, 234, 234, 0.68);
   }
 
-  @media (max-width: 660px) {
+  /* @media (max-width: 660px) {
     h3 {
       font-size: 0.8rem;
     }
     p {
       font-size: 9px;
     }
-  }
+  } */
 `;
 
 export const Percentage = styled.div`
@@ -393,7 +393,7 @@ export const Percentage = styled.div`
 
   @media (max-width: 660px) {
     margin-left: 0.2rem;
-    font-size: 9px;
+    /* font-size: 9px; */
   }
 `;
 
