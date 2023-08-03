@@ -153,7 +153,7 @@ export const Product = styled.div`
 
   @media (max-width: 665px) {
     width: 100%;
-    height: 265px;
+    height: 280px;
     margin: 0.5rem auto;
   }
 `;
