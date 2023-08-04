@@ -38,4 +38,12 @@ const Confirmation = styled.div`
     background: rgba(13, 86, 158, 0.12);
     border-radius: 10px;
   }
+
+  @media (max-width: 660px) {
+    width: 80%;
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
