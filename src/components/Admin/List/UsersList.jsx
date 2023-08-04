@@ -10,6 +10,7 @@ import {
   Blocking,
   Cancel,
   Customer,
+  Head,
 } from "../StyledAdmin.js";
 
 const UsersList = () => {
@@ -101,7 +102,8 @@ const UsersList = () => {
   ];
 
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <div style={{ height: "80vh", width: "100%" }}>
+      <Head>Users</Head>
       <DataGrid
         className="rounded-0"
         rows={rows}

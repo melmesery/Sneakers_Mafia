@@ -7,7 +7,6 @@ const Products = () => {
   return (
     <Fragment>
       <AdminHeaders>
-        <h2>Products</h2>
         <PrimaryButton
           onClick={() => navigate("/admin/products/create-product")}
         >

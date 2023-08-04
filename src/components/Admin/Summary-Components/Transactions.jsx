@@ -4,10 +4,19 @@ import React, { Fragment, useEffect, useState } from "react";
 import { URL } from "../../../API.js";
 import Spinner from "../../Spinner.jsx";
 import { StyledTransactions, Transaction } from "../StyledAdmin.js";
+import Pagination from "../../../utilis/Pagination.jsx";
 
 const Transactions = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(6);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentOrders = orders.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   useEffect(() => {
     async function fetchData() {
@@ -31,7 +40,7 @@ const Transactions = () => {
       ) : (
         <Fragment>
           <h3>Latest Transcations</h3>
-          {orders?.map((order, index) => (
+          {currentOrders?.map((order, index) => (
             <Transaction key={index}>
               <p>{order.shipping.name}</p>
               <p>${(order.total / 100).toLocaleString()}</p>
@@ -40,6 +49,7 @@ const Transactions = () => {
           ))}
         </Fragment>
       )}
+      <Pagination />
     </StyledTransactions>
   );
 };

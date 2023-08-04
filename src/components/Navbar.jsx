@@ -135,13 +135,13 @@ const Navbar = () => {
         )}
 
         <NavbarIcons>
-          {auth._id ? (
+          {auth._id && (
             <Link to={`/user/${auth._id}`}>
               <Profile>
                 <TiUser />
               </Profile>
             </Link>
-          ) : null}
+          )}
 
           <Link to="/cart">
             <NavbarIcon>
@@ -168,7 +168,6 @@ const Navbar = () => {
           ) : null}
 
           <MenuBtn onClick={handleMenuBtn}>
-            {/* <CiMenuKebab /> */}
             <TiThLarge />
           </MenuBtn>
         </NavbarIcons>

@@ -57,6 +57,16 @@ export const ImagePreview = styled.div`
   }
 `;
 
+export const Head = styled.div`
+  display: none;
+
+  @media (max-width: 660px) {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+  }
+`;
+
 // Summary
 
 export const StyledSummary = styled.div`
@@ -259,26 +269,19 @@ export const Info = styled.div`
 
 export const Key = styled.div`
   flex: 1;
-
-  /* @media (max-width: 660px) {
-    font-size: 0.6rem;
-  } */
 `;
 
 export const Data = styled.div`
   flex: 1;
   font-weight: 700;
-
-  /* @media (max-width: 660px) {
-    font-size: 0.6rem;
-  } */
 `;
 
 // Charts
 
 export const StyledChart = styled.div`
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
+  height: auto;
   margin-top: 2rem;
   padding: 1rem;
   border: 2px solid rgba(48, 51, 78, 0.2);

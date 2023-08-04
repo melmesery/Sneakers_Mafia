@@ -7,6 +7,7 @@ import { productDelete } from "../../../store/productSlice.js";
 import EditProduct from "../EditProduct.jsx";
 import {
   Delete,
+  Head,
   ImageContainer,
   ProductActions,
   ProductView,
@@ -88,7 +89,8 @@ const ProductsList = () => {
   ];
 
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <div style={{ height: "80vh", width: "100%" }}>
+      <Head>Products</Head>
       <DataGrid
         className="rounded-0"
         rows={rows}

@@ -5,13 +5,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { orderEdit, ordersFetch } from "../../../store/orderSlice.js";
 import {
-  OrderActions,
   Delivered,
   DeliveryBtn,
   DispatchBtn,
   Dispatched,
-  Pending,
+  Head,
+  OrderActions,
   OrderView,
+  Pending,
 } from "../StyledAdmin.js";
 
 const OrdersList = () => {
@@ -92,7 +93,8 @@ const OrdersList = () => {
   ];
 
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <div style={{ height: "80vh", width: "100%" }}>
+      <Head>Orders</Head>
       <DataGrid
         className="rounded-0"
         rows={rows}

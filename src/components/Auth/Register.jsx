@@ -38,7 +38,7 @@ const Register = () => {
     dispatch(registerUser(user));
   };
 
-  const handleAdminAuth = (e) => {
+  const handleAdminAuth = () => {
     setAdmin(!admin);
   };
 
