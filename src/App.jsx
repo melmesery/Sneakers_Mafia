@@ -38,7 +38,7 @@ const App = () => {
   }, [location]);
 
   const { data } = useGetAllProductsQuery();
-  const { token, role } = useSelector((state) => state.auth);
+  const { _id, token, role } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
   const products = [];
@@ -85,7 +85,10 @@ const App = () => {
         <Route path="/women" element={<Women products={femaleProducts} />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/checkout-success/:id" element={<CheckoutSuccess />} />
+        <Route
+          path={`/checkout-success/${_id}`}
+          element={<CheckoutSuccess />}
+        />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/product/:id" element={<Product />} />
@@ -102,8 +105,11 @@ const App = () => {
             <Route path="users" element={<Users />} />
           </Route>
         ) : null}
-        <Route path="/check-email/:id" element={<CheckEmail />} />
-        <Route path="/email-confirmation/:id" element={<EmailConfirmation />} />
+        <Route path={`/check-email/${_id}`} element={<CheckEmail />} />
+        <Route
+          path={`/email-confirmation/${_id}`}
+          element={<EmailConfirmation />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

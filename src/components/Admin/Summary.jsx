@@ -64,7 +64,6 @@ const Summary = () => {
       try {
         const { data } = await axios.get(`${URL}/order/earnings`);
         setIncome(data);
-        console.log(data);
         if (data[0] && data[1]) {
           setIncomePerc(
             100 * ((data[0].total - data[1].total) / data[1].total)
