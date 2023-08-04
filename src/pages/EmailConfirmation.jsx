@@ -31,7 +31,6 @@ const Confirmation = styled.div`
   }
 
   button {
-    min-height: 80vh;
     width: 100px;
     margin: 0 auto;
     border: none;
@@ -41,6 +40,7 @@ const Confirmation = styled.div`
   }
 
   @media (max-width: 660px) {
+    min-height: 80vh;
     width: 80%;
 
     p {
