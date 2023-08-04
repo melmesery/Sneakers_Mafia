@@ -16,15 +16,15 @@ export const Checkout = styled.div`
   }
 
   @media (max-width: 665px) {
-    min-height: calc(100vh - 45px);
+    min-height: 80vh;
     padding: 0 10px;
- 
+
     h2 {
       margin-bottom: 0.3rem;
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       text-align: center;
       margin-bottom: 0;
     }
