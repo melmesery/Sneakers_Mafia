@@ -35,11 +35,16 @@
 #chart_container {
   height: 400px !important;
   background: #f4f4f4;
+
+  @media (max-width: 660px) {
+    height: 300px !important;
+  }
 }
 
 #lineChart {
   height: 400px;
-}
 
-@media (max-width: 660px) {
+  @media (max-width: 660px) {
+    height: 300px !important;
+  }
 }
