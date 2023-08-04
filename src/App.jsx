@@ -105,11 +105,8 @@ const App = () => {
             <Route path="users" element={<Users />} />
           </Route>
         ) : null}
-        <Route path={`/check-email/${_id}`} element={<CheckEmail />} />
-        <Route
-          path={`/email-confirmation/${_id}`}
-          element={<EmailConfirmation />}
-        />
+        <Route path="/check-email" element={<CheckEmail />} />
+        <Route path="/email-confirmation" element={<EmailConfirmation />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
