@@ -342,7 +342,7 @@ export const Icon = styled.div`
   font-size: 20px;
 
   @media (max-width: 660px) {
-    margin-right: 0rem;
+    margin-right: 10px;
     margin-left: 0rem;
     padding: 0.2rem;
     font-size: 10px;
