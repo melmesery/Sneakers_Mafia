@@ -277,8 +277,8 @@ export const StyledChart = styled.div`
   width: 100%;
   height: 400px;
   margin-top: 2rem;
-  padding: 1rem;
-  border: 2px solid rgba(48, 51, 78, 0.2);
+  /* padding: 1rem; */
+  /* border: 2px solid rgba(48, 51, 78, 0.2); */
 
   h3 {
     margin-bottom: 1rem;
