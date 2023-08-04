@@ -20,7 +20,9 @@ import Product from "./components/Details/Product.jsx";
 import Home from "./components/Home.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Cart from "./pages/Cart.jsx";
+import CheckEmail from "./pages/CheckEmail.jsx";
 import CheckoutSuccess from "./pages/CheckoutSuccess.jsx";
+import EmailConfirmation from "./pages/EmailConfirmation.jsx";
 import Men from "./pages/Men.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Profile from "./pages/Profile.jsx";
@@ -100,6 +102,8 @@ const App = () => {
             <Route path="users" element={<Users />} />
           </Route>
         ) : null}
+        <Route path="/check-email/:id" element={<CheckEmail />} />
+        <Route path="/email-confirmation/:id" element={<EmailConfirmation />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
