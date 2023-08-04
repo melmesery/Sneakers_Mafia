@@ -47,7 +47,7 @@ const Charts = () => {
         <Spinner />
       ) : (
         <StyledChart>
-          <h3>Last 7 Days Earnings(US $)</h3>
+          <h3>Last 7 Days Earnings (US $)</h3>
           <ResponsiveContainer id="chart_container">
             <LineChart id="lineChart" data={sales}>
               <CartesianGrid strokeDasharray="3 3" />
