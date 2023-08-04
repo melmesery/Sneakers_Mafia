@@ -286,6 +286,10 @@ export const StyledChart = styled.div`
   @media (max-width: 660px) {
     padding: 10px;
     font-size: 10px;
+
+    h3 {
+      margin-bottom: 0.8rem;
+    }
   }
 `;
 
