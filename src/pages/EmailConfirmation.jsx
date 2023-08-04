@@ -31,6 +31,7 @@ const Confirmation = styled.div`
   }
 
   button {
+    min-height: 80vh;
     width: 100px;
     margin: 0 auto;
     border: none;
