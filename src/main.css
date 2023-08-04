@@ -31,3 +31,15 @@
     padding: 0;
   }
 }
+
+#chart_container {
+  height: 400px !important;
+  background: #f4f4f4;
+}
+
+#lineChart {
+  height: 400px;
+}
+
+@media (max-width: 660px) {
+}

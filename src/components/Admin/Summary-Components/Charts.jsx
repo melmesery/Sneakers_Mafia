@@ -48,18 +48,8 @@ const Charts = () => {
       ) : (
         <StyledChart>
           <h3>Last 7 Days Earnings(US $)</h3>
-          <ResponsiveContainer>
-            <LineChart
-              // width={500}
-              // height={300}
-              data={sales}
-              // margin={{
-              //   top: 5,
-              //   right: 30,
-              //   left: 20,
-              //   bottom: 5,
-              // }}
-            >
+          <ResponsiveContainer id="chart_container">
+            <LineChart id="lineChart" data={sales}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="day" />
               <YAxis />
