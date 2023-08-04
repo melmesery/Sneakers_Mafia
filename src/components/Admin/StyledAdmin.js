@@ -152,7 +152,6 @@ export const StyledEditProduct = styled.div`
 
 export const StyledDashboard = styled.div`
   display: flex;
-  height: 100vh;
 `;
 
 export const MobileNav = styled.div`
@@ -248,10 +247,6 @@ export const Main = styled.div`
 
   @media (max-width: 660px) {
     margin-top: 20px;
-
-    /* h3 {
-      font-size: 0.8rem;
-    } */
   }
 `;
 
@@ -280,8 +275,7 @@ export const Data = styled.div`
 
 export const StyledChart = styled.div`
   width: 100%;
-  height: 300px;
-  height: auto;
+  height: 400px;
   margin-top: 2rem;
   padding: 1rem;
   border: 2px solid rgba(48, 51, 78, 0.2);
@@ -290,10 +284,10 @@ export const StyledChart = styled.div`
     margin-bottom: 1rem;
   }
 
-  @media (max-width: 660px) {
+  /* @media (max-width: 660px) {
     padding: 0;
     font-size: 10px;
-  }
+  } */
 `;
 
 // Transactions
@@ -302,6 +296,7 @@ export const StyledTransactions = styled.div`
   background: rgb(48, 51, 78);
   color: rgba(234, 234, 255, 0.87);
   padding: 1rem;
+  height: 400px;
 
   @media (max-width: 660px) {
     margin-top: 20px;

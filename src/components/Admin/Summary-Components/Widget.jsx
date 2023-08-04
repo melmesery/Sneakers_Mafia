@@ -16,11 +16,11 @@ const Widget = ({ data }) => {
         <p>{data.title}</p>
       </Text>
       {data.percentage < 0 ? (
-        <Percentage ispositive="false">
+        <Percentage ispositive={false}>
           {Math.floor(data.percentage)}%
         </Percentage>
       ) : (
-        <Percentage ispositive="true">
+        <Percentage ispositive={true}>
           {Math.floor(data.percentage)}%
         </Percentage>
       )}
