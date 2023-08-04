@@ -19,7 +19,7 @@ const Check = styled.div`
   margin: 0 auto;
   margin-top: 100px;
   padding: 2rem;
-  background: #f4f4f4;
+  background: rgba(4, 4, 4, 0.439);
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 

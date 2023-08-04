@@ -22,7 +22,7 @@ const Confirmation = styled.div`
   margin: 0 auto;
   margin-top: 100px;
   padding: 2rem;
-  background: #f4f4f4;
+  background: rgba(4, 4, 4, 0.439);
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
@@ -34,8 +34,8 @@ const Confirmation = styled.div`
     width: 100px;
     margin: 0 auto;
     border: none;
-    color: rgb(13, 86, 158);
-    background: rgba(13, 86, 158, 0.12);
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.12);
     border-radius: 10px;
   }
 
