@@ -280,7 +280,7 @@ export const Data = styled.div`
 
 export const StyledChart = styled.div`
   width: 100%;
-  /* height: 300px; */
+  height: 300px;
   height: auto;
   margin-top: 2rem;
   padding: 1rem;
