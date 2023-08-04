@@ -40,8 +40,8 @@ const Confirmation = styled.div`
   }
 
   @media (max-width: 660px) {
-    min-height: 80vh;
     width: 80%;
+    margin-top: 50px;
 
     p {
       font-size: 1rem;

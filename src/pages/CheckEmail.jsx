@@ -27,4 +27,13 @@ const Check = styled.div`
     font-size: 2rem;
     margin-bottom: 0;
   }
+
+  @media (max-width: 660px) {
+    width: 80%;
+    margin-top: 50px;
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
