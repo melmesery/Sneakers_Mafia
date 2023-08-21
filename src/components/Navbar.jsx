@@ -35,7 +35,11 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setIsAdmin(auth.role === "Admin" || auth.role === "Super Admin");
+    setIsAdmin(
+      auth.role === "Admin" ||
+        auth.role === "Super Admin" ||
+        auth.role === "Tester"
+    );
   }, [auth.role]);
 
   useEffect(() => {
